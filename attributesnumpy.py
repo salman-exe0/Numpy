@@ -20,3 +20,4 @@ print(n1.itemsize)
 #dtype
 print(n1.dtype)
 print(n2.dtype)
+print(n3.dtype)
