@@ -1,2 +1,0 @@
-#commit check
-nm=None
