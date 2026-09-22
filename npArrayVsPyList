@@ -1,0 +1,21 @@
+import numpy as np
+import time
+#speed comparison
+a=[i for i in range(10000000)]
+b=[i for i in range(10000000,20000000)]
+c=[]
+start=time.time()
+for i in range(len(a)):
+    c.append(a[i]+b[i])
+print("Time taken for Python list:", time.time()-start)
+
+a1=np.arange(10000000)
+b1=np.arange(10000000,20000000)
+start=time.time()
+c1=a1+b1
+print("Time taken for NumPy array:", time.time()-start)
+
+#memory usage
+import sys
+print("Memory usage of Python list:", sys.getsizeof(a))
+print("Memory usage of NumPy array:", sys.getsizeof(a1))
