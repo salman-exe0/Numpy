@@ -1,3 +1,11 @@
 import numpy as np
 npArray= np.arange(0,12).reshape(3,4)
 print(npArray[1,::3])
+print(npArray[0:2,1:])
+a3=np.arange(27).reshape(3,3,3)
+print(a3[1])
+print(a3[::2])
+print(a3[0,1])
+print(a3[1,:,1])
+print(a3[2,1:,1:])
+print(a3[0::2,0,0::2])
